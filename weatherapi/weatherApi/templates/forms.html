@@ -1,0 +1,15 @@
+<html>
+<body>
+<h1>My Weather APP</h1>
+<br>
+<form method="post">
+	{% csrf_token %}
+	{{ form }}
+	<input type="submit" value="Submit" />
+</form>
+<h2>Date==> {{ date }}</h2>
+<h2>Temperature==> {{ temp }}</h2>
+<h2>Status==> {{ status }}</h2>
+
+</body>
+</html>
